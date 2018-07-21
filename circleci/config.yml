@@ -38,7 +38,7 @@ jobs:
       - run:
           name: Deploy Master to Heroku
           command: |
-            git push https://heroku:0034b8d0-5bd2-486e-bfa6-b6280e97b645@git.heroku.com/as-ejsportfolio.git master
+            git push https://
 workflows:
   version: 2
   build-deploy:
@@ -50,8 +50,3 @@ workflows:
           filters:
             branches:
               only: master
-deployment:
-  staging:
-    branch: master
-    heroku:
-      appname: foo-bar-123as-ejsportfolio
