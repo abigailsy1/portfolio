@@ -1,0 +1,58 @@
+<html>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <title>Abigail Thanks You</title>
+    </head>
+
+<style>
+body {
+            background-image: url("http://i65.tinypic.com/2s9xchf.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Lobster', cursive;
+        }
+        #hello {
+            max-width: 500px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            min-height: 60px;
+            margin: auto;
+            margin-top: -140px;
+            left: 0;
+            right: 0;
+            border: 1px solid white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4);
+            opacity: 20%;
+        }
+       
+</style>
+
+
+    <body>
+        <div>
+                <div id='hello'>
+                        <h1>Thank you for visiting 
+                                <%= contact.firstName %> <%= contact.lastName %>
+                            !
+                                <i class="fa fa-heart fa-1x" aria-hidden="true"></i>
+                        </h1>
+                        <a href="/" >Return to homepage.
+                        <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+                    </a>
+                        <!-- <p>Thank you <%= contact.firstName %> </p> -->
+                    </div>
+                    
+                   
+
+                         
+        </div>
+    </body>
+</html>

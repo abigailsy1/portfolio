@@ -1,0 +1,306 @@
+<title>Abigail's Portfolio.</title>
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Lobster" rel="stylesheet">
+
+<head>
+    <style>
+        body {
+            background-image: url("http://i65.tinypic.com/2s9xchf.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        h1,
+        h3,
+        p {
+            font-family: 'Lobster', cursive;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(94, 94, 94);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            font-family: 'Lobster', cursive;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main,
+        h2,
+        h6 {
+            font-family: 'Playfair Display', serif;
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .grids {
+            width: 60%;
+            max-width: 1240px;
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 20px;
+        }
+
+        @media only screen and (min-width: 500px) {
+            .grids {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media only screen and (min-width: 850px) {
+            .grids {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .parallaxuno {
+            background-image: url("http://i63.tinypic.com/axn37p.jpg");
+            height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #hello {
+            max-width: 300px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            min-height: 60px;
+            margin: auto;
+            margin-top: -140px;
+            left: 0;
+            right: 0;
+            border: 1px solid white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4);
+            opacity: 20%;
+        }
+
+        .parallaxdos {
+            background-image: url("http://i66.tinypic.com/iqfwud.jpg");
+            height: 50%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallaxtres {
+            background-image: url('http://i65.tinypic.com/dgji4o.jpg');
+            height: 50%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .contactheader {
+            padding-left: 10%;
+            padding-top: 50;
+
+        }
+
+        .contactform {
+            font-family: 'Playfair Display', serif;
+            padding-left: 10%;
+            padding-bottom: 10%;
+            padding-right: 25%
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+        <img src="http://i64.tinypic.com/10eg7ba.jpg" alt="Me" width="1500" height="600">
+</header> -->
+
+    <section>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </section>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <div class="parallaxuno">
+
+            <div id='hello'>
+                <h1>Abigail Sy</h1>
+                <p>Junior Web Developer</p>
+            </div>
+
+        </div>
+
+        <div id="about">
+            <h1>
+                <!-- I am <%= person.firstName %> <%= person.lastName %> -->
+                <center>About Me</center>
+            </h1>
+            <h6 class="aboutme">
+                Hi! My names Abigail Sy. I was born in Guam and raised in San Diego, CA. I got my Bachelors from SDSU in Criminal Justice
+                and Sociology. Whenever I get the chance, I like to travel and explore new places. I enjoy learning about
+                new places, culture, and history. Also, I love any type of paranormal/ghost adventures.
+                <br/>
+                <br/> I am currently transitioning from working in the legal field to becoming a full-stack web developer. I've
+                always been interested in coding, which lead me to enroll at Origin Code Academy.
+            </h6>
+            <div>
+                <center>
+                    <a href="https://github.com/abigailsy1" class="giticon">
+                        <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abigail-s-5b555650/" class="inicon">
+                        <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:abigailsy1@yahoo.com" class="emailicon">
+                        <i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i>
+
+                    </a>
+            </div>
+            </center>
+        </div>
+
+        <div class="parallaxdos"></div>
+
+        <div id="projects">
+            <h1 class="projectsheader">
+                <center>Check out my projects.</center>
+            </h1>
+
+            <div class="grids">
+                <class="w3-content w3-justify w3-text-grey w3-padding-64" style="margin:0 -16px">
+                    <div class="w3-half">
+                        <p>Mortgage Calculator</p>
+                        <a href="https://as-mortgage-calculator.herokuapp.com/">
+                            <img src="http://i64.tinypic.com/16ca07a.png" style="width:80%" id="mortgage">
+                        </a>
+                        <p>Hackathon</p>
+                        <a href="https://as-hackathon.herokuapp.com/">
+                            <img src="http://i67.tinypic.com/2hdptf7.png" style="width:100%" id="hackathon">
+                        </a>
+                        <p>VSTDA</p>
+                        <a href="https://as-vstda.herokuapp.com/">
+                            <img src="http://i67.tinypic.com/f58z00.png" className="center" style="width:100%" id="vstda">
+                        </a>
+
+                    </div>
+                    <p>React SD Top Spots</p>
+                    <div class="w3-half">
+                        <a href="https://as-top-spots.herokuapp.com/">
+                            <img src="http://i68.tinypic.com/2ngd55x.png" style="width:100%" id="sdtopspots">
+                        </a>
+                        <p>React Change Calculator</p>
+                        <a href="https://as-change-calculator.herokuapp.com/">
+                            <img src="http://i66.tinypic.com/2wq5vgn.png" style="width:100%" id="change">
+                        </a>
+                        <p>Astro Weight Calculator</p>
+                        <a href="https://codepen.io/abigailsy/pen/xWzPrd/">
+                            <img src="http://i66.tinypic.com/2vbv9md.png" style="width:100%" id="sdtopspots">
+                        </a>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallaxtres"></div>
+
+    <div id="contact">
+        <h1 class="contactheader">Contact Me</h1>
+        <div class="contactform">
+            <form action="/thanks" method="POST">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" placeholder="First name">
+
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Last name">
+
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="text" placeholder="Enter Email Address">
+
+                <input class="portButton" type="submit" value="Submit">
+            </form>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+
+
+</html>
