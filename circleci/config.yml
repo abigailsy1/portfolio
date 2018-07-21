@@ -50,3 +50,8 @@ workflows:
           filters:
             branches:
               only: master
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: foo-bar-123as-ejsportfolio
