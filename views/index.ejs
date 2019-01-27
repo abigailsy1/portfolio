@@ -80,7 +80,7 @@
             }
         }
 
-        .grids {
+        /* .grids {
             width: 60%;
             max-width: 1240px;
             margin: 0 auto;
@@ -103,6 +103,25 @@
             .grids {
                 grid-template-columns: 1fr;
             }
+        } */
+
+        .column {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            padding: 10px;
+            background-size: 100%;
+            transition: 0.7s;
+        }
+
+        .column:hover {
+            background-size: 110%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
 
         .parallaxuno {
@@ -197,11 +216,19 @@
             </h1>
             <h6 class="aboutme">
                 Hi! My names Abigail Sy. I was born in Guam and raised in San Diego, CA. I got my Bachelors from SDSU in Criminal Justice
-                and Sociology. Whenever I get the chance, I like to travel and explore new places. I enjoy learning about
-                new places, culture, and history. Also, I love any type of paranormal/ghost adventures.
+                and Sociology. I recently graduated from Origin Code Academy. I'm searching for a full time position to apply my new craft. 
+                I'm interested in a position that challenges me and help me grow as an upcoming developer. 
                 <br/>
-                <br/> I am currently transitioning from working in the legal field to becoming a full-stack web developer. I've
-                always been interested in coding, which lead me to enroll at Origin Code Academy.
+                <br/>
+                Whenever I get the chance, I like to travel and explore new places. I enjoy learning about
+                new places, culture, and history. Also, I love any type of paranormal/ghost adventures. Besides exploring the world, 
+                I enjoy reading about new fashion trends, technology, and trending books. I like to get creative by messing around with make up.
+                <br/>
+                <br/> 
+                I am currently working for a law firm that practices in Workers Comp and Subrogation. Specifically, I'm working in the 
+                Subro department as a Legal File Clerk/Assistant. I've been working alongside fellow assistants, secretaries and law clerks
+                to tackle these cases. My daily activies include drafting legal documents and letters, sorting mail, updating files, 
+                and following up with other legal parties involved. 
             </h6>
             <div>
                 <center>
@@ -225,7 +252,15 @@
             <h1 class="projectsheader">
                 <center>Check out my projects.</center>
             </h1>
-
+            <div class="row">
+                <div class="column" style="background-image:url(http://i64.tinypic.com/16ca07a.png)">mortgage</div>
+                <div class="column" style="background-image:url(http://i67.tinypic.com/2hdptf7.png)">hackathon</div>
+            </div>
+            <div class="row">
+                <div class="column" style="background-image:url(http://i67.tinypic.com/f58z00.png)">vstda</div>
+                <div class="column" style="background-image:url(http://i68.tinypic.com/2ngd55x.png)">top spots</div>
+            </div>
+            <!-- 
             <div class="grids">
                 <class="w3-content w3-justify w3-text-grey w3-padding-64" style="margin:0 -16px">
                     <div class="w3-half">
@@ -258,7 +293,7 @@
                         </a>
 
                     </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
